@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "testng-1.0.dtd">
+
+<suite name="CXP_RegressionScripts" parallel="false">
+
+	<listeners>
+		<listener class-name="Cxp.testlisteners.itextcontent.TestngListeners"></listener>
+	</listeners>
+
+	<test thread-count="5" name="RegressionTest" parallel="false">
+		<classes>
+			<class name="LoginPage.Base_Class"> </class>
+			<class name="LoginPage.Login_Test"></class>
+			<!-- <class name="Events.CreateCustomer"></class> -->
+			
+		</classes>  
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
