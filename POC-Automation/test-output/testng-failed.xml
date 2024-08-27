@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionScripts]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="poc.testlisteners.itextcontent.TestngListeners"/>
+  </listeners>
+  <test thread-count="5" name="RegressionTest(failed)">
+    <classes>
+      <class name="Admission.CreateAdmission">
+        <methods>
+          <include name="driversForAdmission"/>
+          <include name="createAdmission"/>
+        </methods>
+      </class> <!-- Admission.CreateAdmission -->
+      <class name="PS.CreatePS">
+        <methods>
+          <include name="navigateToHome"/>
+          <include name="allProps"/>
+          <include name="createPSPopup"/>
+          <include name="createPSAddressDetails"/>
+          <include name="createPSGuarantorDetails"/>
+          <include name="createPSBasicDetails"/>
+        </methods>
+      </class> <!-- PS.CreatePS -->
+      <class name="SchedulingCalendar.AssignDCS">
+        <methods>
+          <include name="assingDCS"/>
+          <include name="driversForAssignDCS"/>
+        </methods>
+      </class> <!-- SchedulingCalendar.AssignDCS -->
+      <class name="PS.HomeFilter">
+        <methods>
+          <include name="filterChange"/>
+          <include name="navigateToHome"/>
+          <include name="driversForFilter"/>
+        </methods>
+      </class> <!-- PS.HomeFilter -->
+      <class name="SchedulingCalendar.AddVisitInSC">
+        <methods>
+          <include name="driversForAddVisits"/>
+          <include name="addVisitFromSC"/>
+        </methods>
+      </class> <!-- SchedulingCalendar.AddVisitInSC -->
+      <class name="Authorization.CreateAuthInBaseFlow">
+        <methods>
+          <include name="createAuthorization"/>
+          <include name="driversForAdmission"/>
+        </methods>
+      </class> <!-- Authorization.CreateAuthInBaseFlow -->
+      <class name="RecurringVisits.CreateRecuVisits">
+        <methods>
+          <include name="driversForCreateRecuVisits"/>
+          <include name="createRecurrVisits"/>
+        </methods>
+      </class> <!-- RecurringVisits.CreateRecuVisits -->
+      <class name="ManageVisits.NavigateToManageVisits">
+        <methods>
+          <include name="driversForSchedMgmt"/>
+          <include name="navigateToSchedMgmt"/>
+        </methods>
+      </class> <!-- ManageVisits.NavigateToManageVisits -->
+      <class name="Dcs.CreateDcsAvailability">
+        <methods>
+          <include name="filterDCS"/>
+          <include name="createDcsAvailability_Weekly"/>
+          <include name="navigateToDcsAvailability"/>
+          <include name="allProps"/>
+        </methods>
+      </class> <!-- Dcs.CreateDcsAvailability -->
+      <class name="SchedulingCalendar.AddVisitPopUp">
+        <methods>
+          <include name="openAddVisitsFromFlyOut"/>
+          <include name="driversForAddVisits"/>
+          <include name="openAddVisitsFromCalendar"/>
+        </methods>
+      </class> <!-- SchedulingCalendar.AddVisitPopUp -->
+      <class name="Dcs.CreateDCS">
+        <methods>
+          <include name="createDcs_BasicDetails"/>
+          <include name="allProps"/>
+          <include name="navigateToDcsListing"/>
+          <include name="navigateToCreateDCS"/>
+          <include name="CreateDcs_Employment"/>
+        </methods>
+      </class> <!-- Dcs.CreateDCS -->
+      <class name="LoginPage.LoginTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="navigateToURL"/>
+          <include name="loginLite"/>
+        </methods>
+      </class> <!-- LoginPage.LoginTest -->
+      <class name="PayorPlan.AddPayorPlan">
+        <methods>
+          <include name="CreatePayorPlan"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- PayorPlan.AddPayorPlan -->
+      <class name="RecurringVisits.NavigateToCreateRecurringVisits">
+        <methods>
+          <include name="driversToNavigateCreateRecuVisits"/>
+          <include name="naviToCreateRecuVisits"/>
+        </methods>
+      </class> <!-- RecurringVisits.NavigateToCreateRecurringVisits -->
+      <class name="ManageVisits.AddVisitPopUpInSchedMgmt">
+        <methods>
+          <include name="driversForAddVisitSchedMgmt"/>
+          <include name="openAddVisitInSchedule"/>
+        </methods>
+      </class> <!-- ManageVisits.AddVisitPopUpInSchedMgmt -->
+      <class name="SchedulingCalendar.Schedule_Criteria">
+        <methods>
+          <include name="updateScheduleCriteria"/>
+          <include name="driversForScheduleCriteria"/>
+        </methods>
+      </class> <!-- SchedulingCalendar.Schedule_Criteria -->
+      <class name="Scheduling.ManageVisits">
+        <methods>
+          <include name="linkVisits"/>
+          <include name="Reconciliation"/>
+          <include name="navigateToManageVisits"/>
+          <include name="allProps"/>
+        </methods>
+      </class> <!-- Scheduling.ManageVisits -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+</suite> <!-- Failed suite [RegressionScripts] -->
