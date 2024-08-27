@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "testng-1.0.dtd" >
+
+<suite name="CreateDCSSuite">
+	<listeners>
+		<listener
+			class-name="poc.testlisteners.itextcontent.TestngListeners">
+		</listener>
+	</listeners>
+
+
+	<test thread-count="5" name="LoginTest">
+		<classes>
+			<class name="LoginPage.BaseClass">
+				<methods>
+					<include name="launchBrowser"></include>
+				</methods>
+			</class>
+			<class name="LoginPage.LoginTest">
+
+			</class>
+			<class name="Scheduling.ManageVisits">
+
+			</class>
+			</classes>
+	</test>
+
+</suite> <!-- Suite -->
