@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener
+			class-name="poc.testlisteners.itextcontent.TestngListeners"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="LoginPage.BaseClass"></class>
+			<class name="LoginPage.LoginTest"></class>
+			<class name="ManageVisits.NavigateToManageVisits"></class>
+			<class name="ManageVisits.AddVisitPopUpInSchedMgmt"></class>
+			<class name="SchedulingCalendar.AddVisitInSC"></class>
+			<class name="SchedulingCalendar.AssignDCS"></class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
