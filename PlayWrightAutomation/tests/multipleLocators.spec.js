@@ -5,7 +5,7 @@ test('Multiple Locators Practice', async ({page}) => {
     await page.goto('https://www.demoblaze.com/');
     const links = await page.$$('a');
 
-    const count = await links.length;
+    const count = links.length;
     console.log('Total number of links on the page: ', count);
 
     for(const link of links){
@@ -25,11 +25,11 @@ test('Multiple Locators Practice', async ({page}) => {
 
     await page.waitForSelector("//div[@id='tbodyid']//div/h4/a");
     const productsList = await page.$$("//div[@id='tbodyid']//div/h4/a");
-    console.log('Number of Products is: ', (await productsList).length);
+    console.log('Number of Products is: ', productsList.length);
     for(const product of productsList){
         const productName = await product.textContent();
         console.log('Product Name is: ', productName);
     }
 
-    await page.close();
+    page.close;
 })  

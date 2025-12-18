@@ -6,13 +6,13 @@ test('HomePage', async ({page})=>{
     const pageTitle = await page.title();
     console.log('PageTitle is: ', pageTitle);
 
-    await expect(page).toHaveTitle;
+    expect(page).toHaveTitle;
 
-    const pageUrl =await page.url();
+    const pageUrl =page.url();
     console.log('Page Url is: ', pageUrl);
 
     await expect(page).toHaveURL('https://www.demoblaze.com/');
     
-    await page.close;
+    page.close;
 
 })

@@ -21,9 +21,9 @@ test('login', async ({page}) => {
      await page.click("//button[normalize-space()='Log in']");
 
      //valicating login
-     const nameOfUser = await page.locator('#nameofuser');
+     const nameOfUser = page.locator('#nameofuser');
      await expect(nameOfUser).toHaveText('Welcome pavanol');
 
-     await page.close();
+     page.close;
 
 })
